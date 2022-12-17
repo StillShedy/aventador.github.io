@@ -174,9 +174,10 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
     margin-bottom: 5px;
+    font-size: 1.5vw;
 }
 
-.schedule-raw>div {
+.schedule-raw > div {
     border-radius: 5px;
     color: #fff;
     text-align: center;
@@ -186,10 +187,12 @@ nav {
 }
 
 .chedule-header-item {
+    font-family: 'Roboto-Regular';
     background-color: #878484;
     color: #fff;
     text-align: center;
     padding: 25px;
+    font-size: 1.2vw;
 }
 
 .max-time {
@@ -330,7 +333,7 @@ hr {
 }
 
 
-@media (max-width:1024px) {
+@media (max-width:720px) {
 
     .schedule{
         padding: 50px;
@@ -360,4 +363,17 @@ hr {
         height: 50vh;
     }
     
+    .chedule-header-item{
+        padding: 3px;
+    }
+
+    .why-crossfit-content-text{
+        padding: 50px;
+        font-size:2vw;
+    }
+
+    .why-crossfit-content-title{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }

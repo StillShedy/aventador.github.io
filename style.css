@@ -3,6 +3,21 @@
     src: url('fonts/CrossfitDemo-Bold.otf');
 }
 
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('fonts/RobotoSlab-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-SemiBold';
+    src: url('fonts/RobotoSlab-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('fonts/RobotoSlab-Regular.ttf');
+}
+
 html {
     --triangle-val: 100px;
     --max-width: 1440px;
@@ -83,6 +98,7 @@ nav {
     border: none;
     cursor: pointer;
     outline: inherit;
+    font-family: 'Roboto-Bold';
     text-transform: uppercase;
 }
 
@@ -105,6 +121,7 @@ nav {
     margin-bottom: 100px;
     font-size: 4vw;
     color: #000;
+    font-family: 'Roboto-Bold';
     text-transform: uppercase;
     text-align: center;
 }
@@ -113,6 +130,7 @@ nav {
     text-transform: uppercase;
     font-size: 1vw;
     max-width: 720px;
+    font-family: 'Roboto-SemiBold';
     margin: auto auto 30px auto;
 }
 
@@ -132,6 +150,7 @@ nav {
     margin-bottom: 25px;
     margin-top: 25px;
     color: #D80102;
+    font-family: 'Roboto-Regular';
 }
 
 .button-content-container {
@@ -149,6 +168,7 @@ nav {
 }
 
 .schedule-raw {
+    font-family: 'Roboto-Regular';
     text-transform: uppercase;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -190,6 +210,7 @@ nav {
 }
 
 .shedule-header {
+    font-family: 'Roboto-Bold';
     text-transform: uppercase;
     text-align: center;
     font-size: 4vw;
@@ -198,7 +219,9 @@ nav {
 }
 
 .service-title {
+    font-family: 'Roboto-Bold';
     text-align: center;
+    font-family: 'Roboto-Bold';
     font-size: 5vw;
     color: #fff;
     text-transform: uppercase;
@@ -207,6 +230,7 @@ nav {
 
 .service-title-list-item {
     display: flex;
+    font-family: 'Roboto-Regular';
     justify-content: space-between;
     color: #fff;
     text-transform: uppercase;
@@ -242,11 +266,13 @@ hr {
 }
 
 .coaches h3{
+    font-family: 'Roboto-SemiBold';
     margin-top: 15px;
     text-transform: uppercase;
 }
 
 .coaches h4{
+    font-family: 'Roboto-Regular';
     color: #D80102;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -254,6 +280,7 @@ hr {
 }
 
 .coaches p{
+    font-family: 'Roboto-Regular';
     font-size: 1vw;
     text-transform: uppercase;
 }
@@ -275,12 +302,14 @@ hr {
 }
 
 .contact-us h2{
+    font-family: 'Roboto-Bold';
     color: #fff;
     text-align: center;
     font-size: 5vw;
 }
 
 .contact-us h3{
+    font-family: 'Roboto-SemiBold';
     color: #fff;
     text-align: center;
     font-size: 1.5vw;

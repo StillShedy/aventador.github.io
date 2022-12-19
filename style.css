@@ -34,19 +34,30 @@ html {
     background-size: cover;
     z-index: 2;
     position: relative;
-    clip-path: polygon(50% 100%, 100% calc(100vh - var(--triangle-val)), 100% 0, 0 0, 0 calc(100vh - var(--triangle-val)));
+    clip-path: polygon(50% 100%,
+            100% calc(100vh - var(--triangle-val)),
+            100% 0,
+            0 0,
+            0 calc(100vh - var(--triangle-val)));
+}
+
+.shedule-section {
+    background: url(img/11.jpg);
+    background-size: cover;
 }
 
 .hero-button-container {
     margin-top: 100px;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .hero-section {
     backdrop-filter: grayscale(1);
-    height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .navigation {
@@ -76,13 +87,10 @@ nav {
 
 .hero-main {
     text-align: center;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .hero-title {
+    text-align: center;
     font-family: 'Crossfit-Bold';
     margin-top: 50px;
     font-size: 7vw;
@@ -104,7 +112,6 @@ nav {
 
 .why-crossfit-bg {
     margin-top: calc(var(--triangle-val) * -1);
-    clip-path: polygon(50% var(--triangle-val), 100% 0, 100% 100%, 0 100%, 0 0);
     z-index: 1;
     background-image: url(img/10.jpg);
     background-size: cover;
@@ -146,7 +153,7 @@ nav {
 .question-small {
     display: block;
     text-transform: uppercase;
-    font-size:  1vw;
+    font-size: 1vw;
     margin-bottom: 25px;
     margin-top: 25px;
     color: #D80102;
@@ -162,10 +169,7 @@ nav {
     backdrop-filter: grayscale(1);
 }
 
-.shedule-section {
-    background: url(img/11.jpg);
-    background-size: cover;
-}
+
 
 .schedule-raw {
     font-family: 'Roboto-Regular';
@@ -177,7 +181,7 @@ nav {
     font-size: 1.5vw;
 }
 
-.schedule-raw > div {
+.schedule-raw>div {
     border-radius: 5px;
     color: #fff;
     text-align: center;
@@ -253,28 +257,28 @@ hr {
     border: 1px solid #d8010257;
 }
 
-.coaches{
+.coaches {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
 
-.coaches img{
+.coaches img {
     max-height: 350px;
     width: auto;
 }
 
-.coach-item{
+.coach-item {
     text-align: center;
 }
 
-.coaches h3{
+.coaches h3 {
     font-family: 'Roboto-SemiBold';
     margin-top: 15px;
     text-transform: uppercase;
 }
 
-.coaches h4{
+.coaches h4 {
     font-family: 'Roboto-Regular';
     color: #D80102;
     margin-top: 10px;
@@ -282,97 +286,107 @@ hr {
     text-transform: uppercase;
 }
 
-.coaches p{
+.coaches p {
     font-family: 'Roboto-Regular';
     font-size: 1vw;
     text-transform: uppercase;
 }
 
-.coaches-bg{
+.coaches-bg {
     background-image: url(img/6.jpeg);
     background-size: cover;
 }
 
-.coached-content{
+.coached-content {
     padding: 100px;
     background-color: #c0c0c0e0;
 }
 
-.contact-us{
+.contact-us {
     padding: 100px;
+    text-align: center;
     background-image: url(img/9.jpg);
     background-size: cover;
 }
 
-.contact-us h2{
+.contact-us h2 {
     font-family: 'Roboto-Bold';
     color: #fff;
     text-align: center;
     font-size: 5vw;
 }
 
-.contact-us h3{
+.contact-us h3 {
     font-family: 'Roboto-SemiBold';
     color: #fff;
     text-align: center;
     font-size: 1.5vw;
 }
 
-.nav-item{
+.nav-item {
     cursor: pointer;
     margin: 5px;
     text-transform: uppercase;
 }
 
-.nav-item-active{
+.nav-item-active {
     border: 2px solid #fff;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     border: 2px solid #fff;
 }
+
+
+.contact-input {
+    display: block;
+    margin: auto;
+    height: 50px;
+}
+
 
 
 @media (max-width:1024px) {
 
-    .schedule{
+    .schedule {
         padding: 50px;
     }
 
-    .services-bg{
+    .services-bg {
         padding: 50px;
     }
 
-    .coached-content{
-        padding: 50px;
-    }
-    .contact-us{
+    .coached-content {
         padding: 50px;
     }
 
-    .coaches{
+    .contact-us {
+        padding: 50px;
+    }
+
+    .coaches {
         display: block;
     }
 
-    .hero-bg{
+    .hero-bg {
         height: 50vh;
         clip-path: polygon(50% 100%, 100% calc(50vh - var(--triangle-val)), 100% 0, 0 0, 0 calc(50vh - var(--triangle-val)));
     }
 
-    .hero-section{
+    .hero-section {
         height: 50vh;
     }
-    
-    .chedule-header-item{
+
+    .chedule-header-item {
         padding: 3px;
     }
 
-    .why-crossfit-content-text{
+    .why-crossfit-content-text {
         padding: 50px;
-        font-size:2vw;
+        font-size: 2vw;
     }
 
-    .why-crossfit-content-title{
+    .why-crossfit-content-title {
         margin-top: 50px;
         margin-bottom: 50px;
     }

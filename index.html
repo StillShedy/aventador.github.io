@@ -3,6 +3,8 @@
 
 <head>
     <link href="style.css" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -33,29 +35,25 @@
 
                 </div>
             </div>
-            <div class="hero-main">
-                <div class="hero-title">
-                    <h1>Aventador 2.0 <br /> crossfit</h1>
-                </div>
-
-                <div class="hero-button-container">
-                    <button class="hero-button">Приєднатися</a>
-                </div>
+            <div class="hero-title">
+                <h1>Aventador 2.0 <br /> crossfit</h1>
             </div>
-
+            <div class="hero-button-container">
+                <button class="hero-button">Приєднатися</a>
+            </div>
         </div>
     </section>
     <section class="why-crossfit-bg">
         <div class="why-crossfit-content">
             <h2 class="why-crossfit-content-title">
-                Why crossfit ocd?
+                Чому саме Aventador?
             </h2>
             <p class="why-crossfit-content-text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum."
+                CrossFit – новий спортивний рух, який спрямований на функціональне фізичне тренування. Тренувальна
+                концепція кросфіту вважається однією з кращих у розвитку загальної фізичної підготовки, в склад якої
+                входять елементи важкої атлетики, кардіотренування, гімнастики, аеробіки, комплексні вправи стронгмену,
+                гирьовий спорт і багато інших видів спорту. Комплекс фізичних навантажень направлений на тренування
+                сили, витривалості і спритності.
             </p>
             <div class="content-logo">
                 <img src="img/logo.png">
@@ -361,7 +359,27 @@
     <section class="contact-us">
         <h2>Звʼяжіться з нами</h2>
         <h3>ми відповимо на будь яке питання</h3>
+        <div>
+            <div>
+                <input class="contact-input" placeholder="Ваш номер телефону">
+                <button class="hero-button">Передзвонити</button>
+            </div>
+            <div>
+                <div id='map' style='width: 400px; height: 300px;'></div>
+
+            </div>
+        </div>
+
     </section>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic3RpbGxzaGVkeSIsImEiOiJjanM0bTFvcHowNXh5NDRzYjliMmZyZGpuIn0.VZeB-SYj2f32KrqtXB54tg';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [36.266448, 49.982918],
+            zoom: 15
+        });
+    </script>
 </body>
 
 </html>

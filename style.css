@@ -4,18 +4,18 @@
 }
 
 @font-face {
-    font-family: 'Roboto-Bold';
-    src: url('fonts/RobotoSlab-Bold.ttf');
+    font-family: 'Unbounded-Bold';
+    src: url('fonts/Unbounded-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Roboto-SemiBold';
-    src: url('fonts/RobotoSlab-SemiBold.ttf');
+    font-family: 'Unbounded-SemiBold';
+    src: url('fonts/Unbounded-SemiBold.ttf');
 }
 
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url('fonts/RobotoSlab-Regular.ttf');
+    font-family: 'Unbounded-Regular';
+    src: url('fonts/Unbounded-Regular.ttf');
 }
 
 html {
@@ -30,6 +30,7 @@ html {
 
 .hero-bg {
     height: 100vh;
+    min-height: 720px;
     background-image: url(img/1.jpg);
     background-size: cover;
     z-index: 2;
@@ -46,6 +47,11 @@ html {
     background-size: cover;
 }
 
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
 .hero-button-container {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -53,8 +59,13 @@ html {
 }
 
 .hero-section {
+    -webkit-backdrop-filter: grayscale(1);
+    -moz-backdrop-filter: grayscale(1);
+    -ms-backdrop-filter: grayscale(1);
+    -o-backdrop-filter: grayscale(1);
     backdrop-filter: grayscale(1);
     max-height: 100vh;
+    min-height: 720px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,12 +112,12 @@ nav {
 .hero-button {
     background-color: #D80102;
     color: #fff;
-    padding: 10px 15px;
+    padding: 15px 45px;
     font-size: 3.5vw;
     border: none;
     cursor: pointer;
     outline: inherit;
-    font-family: 'Roboto-Bold';
+    font-family: 'Unbounded-Bold';
     text-transform: uppercase;
 }
 
@@ -124,29 +135,35 @@ nav {
 }
 
 .why-crossfit-content-title {
-    margin-top: 100px;
-    margin-bottom: 100px;
     font-size: 4vw;
     color: #000;
-    font-family: 'Roboto-Bold';
+    font-family: 'Unbounded-Bold';
     text-transform: uppercase;
     text-align: center;
 }
 
 .why-crossfit-content-text {
+    margin-bottom: 50px;
+    margin-top: 50px;
     text-transform: uppercase;
     font-size: 1vw;
-    max-width: 720px;
-    font-family: 'Roboto-SemiBold';
-    margin: auto auto 30px auto;
+    font-family: 'Unbounded-SemiBold';
+    text-align: justify;
+}
+
+.small-service{
+    font-size: 1vw;
+    text-transform: lowercase;
 }
 
 .content-logo {
+    margin-top: 100px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .content-logo img {
-    width: 100px;
+    max-width: 500px;
     height: auto;
 }
 
@@ -157,7 +174,7 @@ nav {
     margin-bottom: 25px;
     margin-top: 25px;
     color: #D80102;
-    font-family: 'Roboto-Regular';
+    font-family: 'Unbounded-Regular';
 }
 
 .button-content-container {
@@ -166,13 +183,17 @@ nav {
 
 .schedule {
     padding: 100px;
+    -webkit-backdrop-filter: grayscale(1);
+    -moz-backdrop-filter: grayscale(1);
+    -ms-backdrop-filter: grayscale(1);
+    -o-backdrop-filter: grayscale(1);
     backdrop-filter: grayscale(1);
 }
 
 
 
 .schedule-raw {
-    font-family: 'Roboto-Regular';
+    font-family: 'Unbounded-Regular';
     text-transform: uppercase;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -191,8 +212,8 @@ nav {
 }
 
 .chedule-header-item {
-    font-family: 'Roboto-Regular';
-    background-color: #878484;
+    font-family: 'Unbounded-Regular';
+    background-color: #8784845c;
     color: #fff;
     text-align: center;
     padding: 25px;
@@ -217,7 +238,7 @@ nav {
 }
 
 .shedule-header {
-    font-family: 'Roboto-Bold';
+    font-family: 'Unbounded-Bold';
     text-transform: uppercase;
     text-align: center;
     font-size: 4vw;
@@ -226,9 +247,8 @@ nav {
 }
 
 .service-title {
-    font-family: 'Roboto-Bold';
+    font-family: 'Unbounded-Bold';
     text-align: center;
-    font-family: 'Roboto-Bold';
     font-size: 5vw;
     color: #fff;
     text-transform: uppercase;
@@ -237,13 +257,13 @@ nav {
 
 .service-title-list-item {
     display: flex;
-    font-family: 'Roboto-Regular';
+    font-family: 'Unbounded-Regular';
     justify-content: space-between;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 15px;
     margin-top: 15px;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .services-bg {
@@ -273,13 +293,13 @@ hr {
 }
 
 .coaches h3 {
-    font-family: 'Roboto-SemiBold';
+    font-family: 'Unbounded-SemiBold';
     margin-top: 15px;
     text-transform: uppercase;
 }
 
 .coaches h4 {
-    font-family: 'Roboto-Regular';
+    font-family: 'Unbounded-Regular';
     color: #D80102;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -287,7 +307,7 @@ hr {
 }
 
 .coaches p {
-    font-family: 'Roboto-Regular';
+    font-family: 'Unbounded-Regular';
     font-size: 1vw;
     text-transform: uppercase;
 }
@@ -310,20 +330,21 @@ hr {
 }
 
 .contact-us h2 {
-    font-family: 'Roboto-Bold';
+    font-family: 'Unbounded-Bold';
     color: #fff;
     text-align: center;
     font-size: 5vw;
 }
 
 .contact-us h3 {
-    font-family: 'Roboto-SemiBold';
+    font-family: 'Unbounded-SemiBold';
     color: #fff;
     text-align: center;
     font-size: 1.5vw;
 }
 
 .nav-item {
+    font-family: 'Unbounded-SemiBold';
     cursor: pointer;
     margin: 5px;
     text-transform: uppercase;
@@ -369,12 +390,12 @@ hr {
     }
 
     .hero-bg {
-        height: 50vh;
-        clip-path: polygon(50% 100%, 100% calc(50vh - var(--triangle-val)), 100% 0, 0 0, 0 calc(50vh - var(--triangle-val)));
+        height: 720px;
+        clip-path: polygon(50% 100%, 100% calc(720px - var(--triangle-val)), 100% 0, 0 0, 0 calc(720px - var(--triangle-val)));
     }
 
     .hero-section {
-        height: 50vh;
+        height: 720px;
     }
 
     .chedule-header-item {

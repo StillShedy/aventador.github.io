@@ -9,25 +9,25 @@
 
 <body>
     <section class="hero-bg">
-        <div class="hero-section">
+        <div class="hero-section container">
             <div class="navigation">
                 <div class="logo">
                     <img src="img/logo.png">
                 </div>
                 <nav>
-                    <div class="nav-item nav-item-active">
+                    <div data-target="about-us" class="clickable nav-item">
                         <span>Про нас</span>
                     </div>
-                    <div class="nav-item">
+                    <div data-target="shedule" class="clickable nav-item">
                         <span>Розклад</span>
                     </div>
-                    <div class="nav-item">
+                    <div data-target="services" class="clickable nav-item">
                         <span>Послуги</span>
                     </div>
-                    <div class="nav-item">
+                    <div data-target="team" class="clickable nav-item">
                         <span>Команда</span>
                     </div>
-                    <div class="nav-item">
+                    <div data-target="contact-us" class="clickable nav-item">
                         <span>Контакти</span>
                     </div>
                 </nav>
@@ -39,33 +39,35 @@
                 <h1>Aventador 2.0 <br /> crossfit</h1>
             </div>
             <div class="hero-button-container">
-                <button class="hero-button">Приєднатися</a>
+                <button class="hero-button">Приєднатись</a>
             </div>
         </div>
     </section>
-    <section class="why-crossfit-bg">
+    <section class="why-crossfit-bg" id="about-us">
         <div class="why-crossfit-content">
-            <h2 class="why-crossfit-content-title">
-                Чому саме Aventador?
-            </h2>
-            <p class="why-crossfit-content-text">
-                CrossFit – новий спортивний рух, який спрямований на функціональне фізичне тренування. Тренувальна
-                концепція кросфіту вважається однією з кращих у розвитку загальної фізичної підготовки, в склад якої
-                входять елементи важкої атлетики, кардіотренування, гімнастики, аеробіки, комплексні вправи стронгмену,
-                гирьовий спорт і багато інших видів спорту. Комплекс фізичних навантажень направлений на тренування
-                сили, витривалості і спритності.
-            </p>
-            <div class="content-logo">
-                <img src="img/logo.png">
-            </div>
+            <div class=" container">
+                <div class="content-logo">
+                    <img src="img/logo.png">
+                </div>
+                <h2 class="why-crossfit-content-title">
+                    Чому саме ми?
+                </h2>
+                <p class="why-crossfit-content-text">
+                    CrossFit – новий спортивний рух, який спрямований на функціональне фізичне тренування. Тренувальна
+                    концепція кросфіту вважається однією з кращих у розвитку загальної фізичної підготовки, в склад якої
+                    входять елементи важкої атлетики, кардіотренування, гімнастики, аеробіки, комплексні вправи
+                    стронгмену,
+                    гирьовий спорт і багато інших видів спорту. Комплекс фізичних навантажень направлений на тренування
+                    сили, витривалості і спритності.
+                </p>
 
-            <div class="button-content-container">
-                <span class="question-small">отримай знижку</span>
-                <button class="hero-button">Приєднатися</button>
+                <div class="button-content-container">
+                    <button class="hero-button">Приєднатись</button>
+                </div>
             </div>
         </div>
     </section>
-    <section class="shedule-section">
+    <section class="shedule-section" id="shedule">
         <div class="schedule">
             <h2 class="shedule-header">Розклад групових занять</h2>
             <div class="schedule-raw">
@@ -81,19 +83,22 @@
                 <div class="chedule-header-item">09:00</div>
                 <div class="max-time">
                     <div>
-                        crossfit<span>Максим</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Максим</span>
                     </div>
                 </div>
                 <div class="empty-time"></div>
                 <div class="max-time">
                     <div>
-                        crossfit<span>Максим</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Максим</span>
                     </div>
                 </div>
                 <div class="empty-time"></div>
                 <div class="max-time">
                     <div>
-                        crossfit<span>Максим</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Максим</span>
                     </div>
                 </div>
                 <div class="empty-time"></div>
@@ -103,13 +108,15 @@
                 <div class="empty-time"></div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
                 <div class="empty-time"></div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
                 <div class="empty-time"></div>
@@ -124,7 +131,8 @@
                 <div class="empty-time"></div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
             </div>
@@ -132,19 +140,22 @@
                 <div class="chedule-header-item">12:00</div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
                 <div class="empty-time"></div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
                 <div class="empty-time"></div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
                 <div class="empty-time"></div>
@@ -158,7 +169,7 @@
                 <div class="empty-time"></div>
                 <div class="alex-time">
                     <div>
-                        mobility<span>Максим</span>
+                       <span class="shedule-sport">mobility</span> <span>Максим</span>
                     </div>
                 </div>
             </div>
@@ -166,27 +177,32 @@
                 <div class="chedule-header-item">17:00</div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
                 <div class="max-time">
                     <div>
-                        crossfit<span>Максим</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Максим</span>
                     </div>
                 </div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
                 <div class="max-time">
                     <div>
-                        crossfit<span>Максим</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Максим</span>
                     </div>
                 </div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
                 <div class="empty-time"></div>
@@ -195,37 +211,40 @@
                 <div class="chedule-header-item">18:30</div>
                 <div class="max-time">
                     <div>
-                        crossfit<span>Максим</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Максим</span>
                     </div>
                 </div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
                 <div class="max-time">
                     <div>
-                        crossfit<span>Максим</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Максим</span>
                     </div>
                 </div>
                 <div class="alex-time">
                     <div>
-                        crossfit<span>Саша</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Саша</span>
                     </div>
                 </div>
                 <div class="max-time">
                     <div>
-                        crossfit<span>Максим</span>
+                        <span class="shedule-sport">crossfit</span>
+                        <span>Максим</span>
                     </div>
                 </div>
                 <div class="empty-time"></div>
             </div>
-
-
         </div>
     </section>
-    <section class="services-bg">
-        <div>
+    <section class="services-bg" id="services">
+        <div class="container">
             <div class="service-title">
                 Послуги
             </div>
@@ -240,7 +259,7 @@
             <hr>
             <div class="service-title-list-item">
                 <div>
-                    12 тренувань(самостійно)
+                    12 тренувань <span class="small-service">(самостійно)</span>
                 </div>
                 <div>
                     850
@@ -250,7 +269,7 @@
 
             <div class="service-title-list-item">
                 <div>
-                    12 тренувань(група)
+                    12 тренувань <span class="small-service">(група)</span>
                 </div>
                 <div>
                     999
@@ -260,7 +279,7 @@
 
             <div class="service-title-list-item">
                 <div>
-                    Безліміт на місяць(самостійно)
+                    Безліміт на місяць <span class="small-service">(самостійно)</span>
                 </div>
                 <div>
                     1050
@@ -269,7 +288,7 @@
             <hr>
             <div class="service-title-list-item">
                 <div>
-                    Безліміт на місяць(група)
+                    Безліміт на місяць <span class="small-service">(група)</span>
                 </div>
                 <div>
                     1200
@@ -278,7 +297,7 @@
             <hr>
             <div class="service-title-list-item">
                 <div>
-                    Індивідуальне тренування(разове)
+                    Індивідуальне тренування <span class="small-service">(разове)</span>
                 </div>
                 <div>
                     350
@@ -287,7 +306,7 @@
             <hr>
             <div class="service-title-list-item">
                 <div>
-                    Індивідуальне тренування(12 занять)
+                    Індивідуальне тренування <span class="small-service">(12 занять)</span>
                 </div>
                 <div>
                     3500
@@ -296,7 +315,7 @@
             <hr>
             <div class="service-title-list-item">
                 <div>
-                    Парні індивідуальне тренування(разове)
+                    Парні індивідуальне тренування <span class="small-service">(разове)</span>
                 </div>
                 <div>
                     500
@@ -305,7 +324,7 @@
             <hr>
             <div class="service-title-list-item">
                 <div>
-                    Парні індивідуальне тренування(12 занять)
+                    Парні індивідуальне тренування <span class="small-service">(12 занять)</span>
                 </div>
                 <div>
                     5000
@@ -315,50 +334,54 @@
         </div>
     </section>
 
-    <section class="coaches-bg">
-        <div class="coached-content">
-            <div class="service-title">
-                Наша команда
-            </div>
-            <div class="coaches">
-                <div class="coach-item">
-                    <div>
-                        <img src="img/coach1.png">
-                    </div>
-                    <h3>
-                        Нежид Олександр
-                    </h3>
-                    <h4>crossfit trainer</h4>
-                    <p>
-                        Майстер спорту України з плавання. Почав займатися цим видом спорту з 4-х років. Я знаю, як
-                        отримати
-                        максимальну користь зі своїх рухів у воді, витрачаючи мінімальну кількість зусиль, і з радістю
-                        передам свій досвід усім охочим!
-                    </p>
+    <section class="coaches-bg" id="team">
+        <div class="coached-content ">
+            <div class="container">
+                <div class="service-title">
+                    Наша команда
                 </div>
-                <div class="coach-item">
-                    <div>
-                        <img src="img/coach2.png">
+                <div class="coaches">
+                    <div class="coach-item">
+                        <div>
+                            <img src="img/coach1.png">
+                        </div>
+                        <h3>
+                            Нежид Олександр
+                        </h3>
+                        <h4>crossfit trainer</h4>
+                        <p>
+                            Майстер спорту України з плавання. Почав займатися цим видом спорту з 4-х років. Я знаю, як
+                            отримати
+                            максимальну користь зі своїх рухів у воді, витрачаючи мінімальну кількість зусиль, і з
+                            радістю
+                            передам свій досвід усім охочим!
+                        </p>
                     </div>
-                    <h3>
-                        Нежид Олександр
-                    </h3>
-                    <h4>crossfit trainer</h4>
-                    <p>
-                        Майстер спорту України з плавання. Почав займатися цим видом спорту з 4-х років. Я знаю, як
-                        отримати
-                        максимальну користь зі своїх рухів у воді, витрачаючи мінімальну кількість зусиль, і з радістю
-                        передам свій досвід усім охочим!
-                    </p>
+                    <div class="coach-item">
+                        <div>
+                            <img src="img/coach2.png">
+                        </div>
+                        <h3>
+                            Нежид Олександр
+                        </h3>
+                        <h4>crossfit trainer</h4>
+                        <p>
+                            Майстер спорту України з плавання. Почав займатися цим видом спорту з 4-х років. Я знаю, як
+                            отримати
+                            максимальну користь зі своїх рухів у воді, витрачаючи мінімальну кількість зусиль, і з
+                            радістю
+                            передам свій досвід усім охочим!
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <section class="contact-us">
-        <h2>Звʼяжіться з нами</h2>
-        <h3>ми відповимо на будь яке питання</h3>
+    <section class="contact-us" id="contact-us">
+        <h2>Отримуй знижку</h2>
+        <h3>на перше тренування</h3>
         <div>
             <div>
                 <input class="contact-input" placeholder="Ваш номер телефону">
@@ -372,6 +395,17 @@
 
     </section>
     <script>
+        window.elements = document.getElementsByClassName('clickable');
+        for (var el of window.elements) {
+            el.addEventListener('click', function () {
+                for (var element of window.elements) {
+                    element.classList.remove('nav-item-active');
+                }
+                this.classList.add('nav-item-active');
+                document.getElementById(this.dataset.target).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            })
+        }
+
         mapboxgl.accessToken = 'pk.eyJ1Ijoic3RpbGxzaGVkeSIsImEiOiJjanM0bTFvcHowNXh5NDRzYjliMmZyZGpuIn0.VZeB-SYj2f32KrqtXB54tg';
         var map = new mapboxgl.Map({
             container: 'map',

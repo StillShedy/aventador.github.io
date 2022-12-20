@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: 'Unbounded-Light';
+    src: url('fonts/Unbounded-Light.ttf');
+}
+
+@font-face {
     font-family: 'Unbounded-SemiBold';
     src: url('fonts/Unbounded-SemiBold.ttf');
 }
@@ -185,25 +190,75 @@ nav {
     padding: 100px;
 }
 
+.days-data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
+.days-item {
+    font-size: 5vw;
+}
+
+.shedule-details {
+    display: flex;
+    justify-content: center;
+}
+
+.right-coach {
+    padding: 5% 15%;
+    text-align: center;
+}
 
 .schedule-raw {
+    color: #fff;
     font-family: 'Unbounded-Regular';
     text-transform: uppercase;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     gap: 5px;
     margin-bottom: 5px;
     font-size: 1.5vw;
 }
 
-.schedule-raw>div {
-    border-radius: 5px;
+.schedule-raw-merged {
     color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Unbounded-Regular';
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "left middle-top right-top" "left middle-bottom right-bottom";
+    gap: 5px;
+    margin-bottom: 5px;
+    font-size: 1.5vw;
+}
+
+
+.left {
+    grid-area: left;
+}
+
+.middle-top {
+    grid-area: middle-top;
+}
+
+.right-top {
+    grid-area: right-top;
+}
+
+.middle-bottom {
+    grid-area: middle-bottom;
+}
+
+.rigth-bottom{
+    grid-area: 'right-bottom';
+}
+
+.shedule-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .chedule-header-item {
@@ -211,17 +266,25 @@ nav {
     background-color: #8784845c;
     color: #fff;
     text-align: center;
-    padding: 25px;
-    font-size: 1.2vw;
+    font-size: 2vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .max-time {
-    background-color: #D80102
+    background-color: #c0c0c036
 }
 
 .alex-time span,
 .max-time span {
     display: block;
+}
+
+.right-coach{
+    font-family: 'Unbounded-Light';
+    font-size: 1.5vw;
 }
 
 .empty-time {

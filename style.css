@@ -68,8 +68,12 @@ html {
     text-align: center;
 }
 
-.hero-section {
+.black-wrapper {
     background-color: #0000008c;
+
+}
+
+.hero-section {
     height: 100vh;
     min-height: 720px;
     display: flex;
@@ -251,7 +255,7 @@ nav {
     grid-area: middle-bottom;
 }
 
-.rigth-bottom{
+.rigth-bottom {
     grid-area: 'right-bottom';
 }
 
@@ -282,7 +286,7 @@ nav {
     display: block;
 }
 
-.right-coach{
+.right-coach {
     font-family: 'Unbounded-Light';
     font-size: 1.5vw;
 }

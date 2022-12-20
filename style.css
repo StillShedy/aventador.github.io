@@ -63,8 +63,6 @@ html {
 .container {
     max-width: 1440px;
     margin: auto;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 .hero-button-container {
@@ -399,7 +397,7 @@ hr {
 
 .coached-content {
     padding-top: 150px;
-    padding-bottom:50px;
+    padding-bottom: 50px;
 }
 
 .contact-us {
@@ -493,7 +491,12 @@ hr {
     grid-area: g;
 }
 
-
+@media (max-width:1440px) {
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
 
 @media (max-width:1024px) {
 

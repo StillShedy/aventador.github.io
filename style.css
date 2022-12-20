@@ -53,13 +53,18 @@ html {
 }
 
 .shedule-section {
+    position: relative;
+    z-index: 2;
     background: url(img/11.jpg);
     background-size: cover;
+    clip-path: polygon(50% 100%, 100% calc(100% - var(--triangle-val)), 100% 0, 0 0, 0 calc(100% - var(--triangle-val)));
 }
 
 .container {
     max-width: 1440px;
     margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .hero-button-container {
@@ -120,7 +125,7 @@ nav {
 }
 
 .hero-button {
-    background-color: #D80102;
+    background-color: #e41e23;
     color: #fff;
     padding: 15px 45px;
     font-size: 3.5vw;
@@ -182,7 +187,7 @@ nav {
     font-size: 1vw;
     margin-bottom: 25px;
     margin-top: 25px;
-    color: #D80102;
+    color: #e41e23;
     font-family: 'Unbounded-Regular';
 }
 
@@ -191,7 +196,8 @@ nav {
 }
 
 .schedule {
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 150px;
 }
 
 .days-data {
@@ -329,40 +335,51 @@ nav {
 }
 
 .services-bg {
-    padding: 100px;
-    background-color: #fff;
     background: url(img/12.jpg);
     background-size: cover;
+    margin-top: -100px;
+    position: relative;
+    clip-path: polygon(50% 100%, 100% calc(100% - var(--triangle-val)), 100% 0, 0 0, 0 calc(100% - var(--triangle-val)));
+}
+
+.service-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 hr {
-    border: 1px solid #d8010257;
+    border: 1px solid #ffffff38;
 }
 
 .coaches {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 0px 50px;
 }
 
 .coaches img {
-    max-height: 350px;
-    width: auto;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
 }
 
 .coach-item {
+    background-color: #8784845c;
     text-align: center;
+    margin-bottom: 100px;
+    color: #fff;
+    padding: 20px 30px;
 }
 
 .coaches h3 {
     font-family: 'Unbounded-SemiBold';
-    margin-top: 15px;
     text-transform: uppercase;
+    font-size: 1.5vw;
 }
 
 .coaches h4 {
     font-family: 'Unbounded-Regular';
-    color: #D80102;
+    color: #e41e23;
     margin-top: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -371,17 +388,18 @@ hr {
 .coaches p {
     font-family: 'Unbounded-Regular';
     font-size: 1vw;
-    text-transform: uppercase;
+    text-align: justify;
 }
 
 .coaches-bg {
-    background-image: url(img/6.jpeg);
+    background-image: url(img/greblya.jpg);
     background-size: cover;
+    margin-top: -100px;
 }
 
 .coached-content {
-    padding: 100px;
-    background-color: #c0c0c0e0;
+    padding-top: 150px;
+    padding-bottom:50px;
 }
 
 .contact-us {
@@ -478,18 +496,6 @@ hr {
 
 
 @media (max-width:1024px) {
-
-    .schedule {
-        padding: 50px;
-    }
-
-    .services-bg {
-        padding: 50px;
-    }
-
-    .coached-content {
-        padding: 50px;
-    }
 
     .contact-us {
         padding: 50px;

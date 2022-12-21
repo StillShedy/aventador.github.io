@@ -55,7 +55,7 @@ html {
 .shedule-section {
     position: relative;
     z-index: 2;
-    background: url(img/11.jpg);
+    background: url(img/prod3.JPG);
     background-size: cover;
     clip-path: polygon(50% 100%, 100% calc(100% - var(--triangle-val)), 100% 0, 0 0, 0 calc(100% - var(--triangle-val)));
 }
@@ -137,13 +137,15 @@ nav {
 .why-crossfit-bg {
     margin-top: calc(var(--triangle-val) * -1);
     z-index: 1;
-    background-image: url(img/10.jpg);
-    background-size: cover;
+    background-image: url(img/prod9.jpg);
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 
 .why-crossfit-content {
     padding-top: var(--triangle-val);
-    background-color: #c0c0c0e0;
+    background-color: #c0c0c0b3;
 }
 
 .why-crossfit-content-title {
@@ -333,7 +335,7 @@ nav {
 }
 
 .services-bg {
-    background: url(img/12.jpg);
+    background: url(img/prod2.JPG);
     background-size: cover;
     margin-top: -100px;
     position: relative;
@@ -390,9 +392,10 @@ hr {
 }
 
 .coaches-bg {
-    background-image: url(img/greblya.jpg);
+    background-image: url(img/prod11.JPG);
     background-size: cover;
     margin-top: -100px;
+    background-position: center;
 }
 
 .coached-content {

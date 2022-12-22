@@ -534,9 +534,6 @@ hr {
     grid-area: g;
 }
 
-#map {
-    min-height: 600px;
-}
 
 #map canvas {
     height: 100% !important;
@@ -580,6 +577,9 @@ hr {
 }
 
 @media (max-width:1024px) {
+    #map {
+        min-height: 600px;
+    }
     .coaches {
         display: block;
     }

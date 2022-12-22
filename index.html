@@ -49,9 +49,18 @@
     <section class="why-crossfit-bg">
         <div class="why-crossfit-content">
             <div class="container">
+                <h2 class="why-crossfit-content-title-small">
+                    Чи вивезеш ти?
+                </h2>
                 <div class="content-logo">
                     <img src="img/logo.png">
                 </div>
+                <h2 class="why-crossfit-content-title">
+                    Прийди і перевір
+                </h2>
+                <p class="why-crossfit-content-text">
+                    перше тренування зі знижкою
+                </p>
             </div>
             <div class="gallery-grid" id="about-us">
                 <div class="a">
@@ -382,19 +391,26 @@
     </section>
 
     <section class="contact-us" id="contact-us">
-        <h2>Отримуй знижку</h2>
-        <h3>на перше тренування</h3>
-        <div>
-            <div>
-                <input class="contact-input" placeholder="Ваш номер телефону">
-                <button class="hero-button">Передзвонити</button>
-            </div>
-            <div>
-                <div id='map' style='width: 400px; height: 300px;'></div>
-
+        <div class="black-wrapper">
+            <div class="contact-us-grid container-contact-us">
+                <div class="contact-us-grid-left">
+                    <h2>Як нас знайти?</h2>
+                    <h3>вулиця Храмова, 1 <br> Харків</h3>
+                    <h4><a href="tel:+380684887215">+380684887215</a></h4>
+                    <div class="contact-us-social-container">
+                        <a class="contact-us-social" href="">
+                            <img class="contact-us-social" src="img/tg.svg">
+                        </a>
+                        <a class="contact-us-social" href="https://www.instagram.com/aventadorkh2.0/">
+                            <img class="contact-us-social" src="img/inst.svg">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div id='map' style='width: auto; height: 100%;'></div>
+                </div>
             </div>
         </div>
-
     </section>
     <script>
         window.elements = document.getElementsByClassName('clickable');
@@ -412,9 +428,30 @@
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [36.266448, 49.982918],
+            center: [36.26460838844753, 49.98286081760102],
             zoom: 15
         });
+
+        const popup = new mapboxgl.Popup({
+            closeOnClick: false,
+            closeButton: false,
+            anchor:'left',
+            color: '#c0c0c036'
+        })
+            .setLngLat([36.26460838844753, 49.98286081760102])
+            .setHTML(`<div class="map-popup">
+                <img class="popup-logo" src="img/logo.png">
+                <div class=map-title>Графік роботи:</div>
+                <div class=map-item>ПН 8:00 - 22:00</div>
+                <div class=map-item>ВТ 8:00 - 22:00</div>
+                <div class=map-item>СР 8:00 - 22:00</div>
+                <div class=map-item>ЧТ 8:00 - 22:00</div>
+                <div class=map-item>ПТ 8:00 - 22:00</div>
+                <div class=map-item>СБ 8:00 - 22:00</div>
+                <div class=map-item>НД Вихідний</div>
+                </div>`)
+            .addTo(map);
+
     </script>
 </body>
 

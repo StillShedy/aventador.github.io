@@ -45,8 +45,20 @@ $('.popup-close').on('click', () => {
 })
 
 
-$('.popup-preview').on('click', () => {
+$('.popup-preview').on('click', function () {
     $('.images-popup').show();
+    var targetSrc = $(this).attr('src');
+    let item;
+    $('.container-item').map(x => {
+        var current = $($('.container-item')[x])[0];
+        if (current != undefined) {
+            if ($(current.children[0]).attr('src') == targetSrc) {
+                item = current;
+                current.remove();
+            }
+        }
+    })
+    $('.image-open-container').prepend(item);
     $('.image-open-container').slick({
         adaptiveHeight: false,
         dots: true,

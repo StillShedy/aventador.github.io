@@ -41,7 +41,8 @@ const popup = new mapboxgl.Popup({
 
 $('.popup-close').on('click', () => {
     $('.images-popup').hide();
-    $('.image-open-container').slick('unslick')
+    $('.image-open-container').slick('unslick');
+    $('body').css("overflow-y","auto");
 })
 
 
@@ -60,8 +61,10 @@ $('.popup-preview').on('click', function () {
     })
     $('.image-open-container').prepend(item);
     $('.image-open-container').slick({
-        adaptiveHeight: false,
+        adaptiveHeight: true,
         dots: true,
         infinite: true,
     });
+
+    $('body').css("overflow-y","hidden");
 })

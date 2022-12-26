@@ -574,12 +574,16 @@ hr {
 }
 
 .images-popup {
+    backdrop-filter: blur(4px);
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     background-color: #ffffffd6;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .popup-close {
@@ -589,12 +593,11 @@ hr {
     cursor: pointer;
 }
 
-
 .images-popup-content {
     padding: 30px;
 }
 
-.popup-preview{
+.popup-preview {
     transition: transform .2s;
     position: relative;
     z-index: 3;
@@ -602,8 +605,14 @@ hr {
 }
 
 .popup-preview:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    z-index: 4;  
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    z-index: 4;
+}
+
+.coach-description-item {
+    display: block;
+    margin-bottom: 10px;
 }
 
 @media (max-width:1440px) {
@@ -624,25 +633,27 @@ hr {
 
 @media (max-width:1024px) {
 
-    .coaches h3{
+    .coaches h3 {
         font-size: 3vw;
     }
-    .coaches p{
+
+    .coaches p {
         font-size: 2vw;
     }
-    .contact-us-social{
+
+    .contact-us-social {
         width: 100px;
     }
 
-    .contact-us h2{
+    .contact-us h2 {
         font-size: 5vw;
     }
 
-    .contact-us h3{
+    .contact-us h3 {
         font-size: 3vw;
     }
 
-    .contact-us h4{
+    .contact-us h4 {
         font-size: 3vw;
     }
 
@@ -680,4 +691,10 @@ hr {
         margin-top: calc(var(--triangle-val) * -1);
         background-size: cover;
     }
+
+    .popup-close img {
+        width: 55px;
+        height: 55px;
+    }
+
 }

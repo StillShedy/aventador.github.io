@@ -369,7 +369,7 @@ hr {
 
 .coaches img {
     width: 100%;
-    max-height: 1000px;
+    max-height: 600px;
     object-fit: cover;
 }
 
@@ -644,6 +644,10 @@ hr {
 
 
 @media (max-width:1024px) {
+    .coaches img {
+        max-height: 1000px;
+    }
+    
     .right-nav {
         width: 0px;
     }

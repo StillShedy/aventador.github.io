@@ -631,8 +631,13 @@ hr {
     }
 }
 
+.coaches img {
+    object-position: top;
+}
+
 @media (max-width:1024px) {
 
+ 
     .coaches h3 {
         font-size: 3vw;
     }

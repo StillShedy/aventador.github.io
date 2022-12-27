@@ -37,12 +37,15 @@ const popup = new mapboxgl.Popup({
                 </div>`)
     .addTo(map);
 
+let scrollPosition = 0;
 
 
 $('.popup-close').on('click', () => {
     $('.images-popup').hide();
     $('.image-open-container').slick('unslick');
-    $('body').css("overflow-y","auto");
+    $('body').css("overflow-y", "auto");
+    $('body').css("position", "initial");
+    window.scrollTo(0, scrollPosition);
 })
 
 
@@ -65,6 +68,9 @@ $('.popup-preview').on('click', function () {
         dots: true,
         infinite: true,
     });
+    scrollPosition = window.pageYOffset;
 
-    $('body').css("overflow-y","hidden");
+    $('body').css("overflow-y", "hidden");
+    $('body').css("position", "fixed");
+    $('body').css('top', `-${scrollPosition}px`);
 })

@@ -91,6 +91,7 @@ html {
 
 .logo {
     max-width: 150px;
+    margin: auto;
 }
 
 .logo img {
@@ -103,6 +104,7 @@ nav {
     justify-content: space-between;
     margin: auto;
     color: #fff;
+    font-size: 1.5vw;
 }
 
 .nav-item {
@@ -615,6 +617,14 @@ hr {
     margin-bottom: 10px;
 }
 
+.right-nav {
+    width: 150px;
+}
+
+.coaches img {
+    object-position: top;
+}
+
 @media (max-width:1440px) {
     .contact-us-grid-left {
         margin-left: 50px;
@@ -631,13 +641,13 @@ hr {
     }
 }
 
-.coaches img {
-    object-position: top;
-}
+
 
 @media (max-width:1024px) {
+    .right-nav {
+        width: 0px;
+    }
 
- 
     .coaches h3 {
         font-size: 3vw;
     }

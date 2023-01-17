@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AventadorWeb", "AventadorWeb\AventadorWeb.csproj", "{A90A2002-B673-410B-A29C-294355E01D18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A90A2002-B673-410B-A29C-294355E01D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90A2002-B673-410B-A29C-294355E01D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90A2002-B673-410B-A29C-294355E01D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90A2002-B673-410B-A29C-294355E01D18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66E0FC06-3907-4B29-A7E3-5430DD11D71B}
+	EndGlobalSection
+EndGlobal

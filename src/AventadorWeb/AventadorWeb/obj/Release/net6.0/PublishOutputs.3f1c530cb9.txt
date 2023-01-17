@@ -1,0 +1,7 @@
+/Users/denisturchak/Documents/deploycrossfit/AventadorWeb
+/Users/denisturchak/Documents/deploycrossfit/appsettings.Development.json
+/Users/denisturchak/Documents/deploycrossfit/appsettings.json
+/Users/denisturchak/Documents/deploycrossfit/AventadorWeb.dll
+/Users/denisturchak/Documents/deploycrossfit/AventadorWeb.deps.json
+/Users/denisturchak/Documents/deploycrossfit/AventadorWeb.runtimeconfig.json
+/Users/denisturchak/Documents/deploycrossfit/AventadorWeb.pdb

@@ -1,0 +1,7 @@
+/Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/bin/Release/net6.0/publish/AventadorWeb
+/Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/bin/Release/net6.0/publish/appsettings.Development.json
+/Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/bin/Release/net6.0/publish/appsettings.json
+/Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/bin/Release/net6.0/publish/AventadorWeb.dll
+/Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/bin/Release/net6.0/publish/AventadorWeb.deps.json
+/Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/bin/Release/net6.0/publish/AventadorWeb.runtimeconfig.json
+/Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/bin/Release/net6.0/publish/AventadorWeb.pdb

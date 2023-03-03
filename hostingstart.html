@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="slick-theme.css" />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <title>Aventador 2.0 | Crossfit</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </head>
 
 <body>
@@ -37,15 +40,20 @@
                         </div>
                     </nav>
                     <div class="right-nav">
-
+                        <a href="tel:0634269990">063 426 99 90</a>
+                        <div class="button-popup">Записатись</div>
                     </div>
                 </div>
-                <div class="hero-title">
+                <div class="video-container">
+                    <div id="play-stop-button" class="play-button pointer"></div>
+                    <video id="video" src="video/aventador.MP4"></video>
+                </div>
+                <!-- <div class="hero-title">
                     <h1>Crossfit - це універсальна зброя,<br>яка завжди з тобою!</h1>
                 </div>
                 <div class="hero-button-container">
                     <button data-target="contact-us" class="hero-button clickable">Приєднатись</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -453,7 +461,43 @@
             </div>
         </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <section class="callback-popup st0">
+        <div class="callback-popup-container">
+            <div class="callback-popup-close">
+                <img src="img/cross.png" alt="">
+            </div>
+            <div>
+                <h2>Бажєте записатись або отримати консультацію?</h2>
+                <p>Заповніть форму нижче і ми Вам передзвонимо.</p>
+            </div>
+            <div class="callback-form-container">
+                <form class="callback-form" id="callback-popup" action="" method="">
+                    <div class="callback-form-box">
+                        <label class="input-title">Ваше ім'я</label>
+                        <input type="text"  name="name_popup" placeholder="Ім'я" class="input_popup" required>
+                    </div>
+                    <div class="callback-form-box">
+                        <label class="input-title">Ваш телефон</label>
+                        <input type="text" name="tel_popup" class="input_popup phone-mask" required>
+                        <script type="text/javascript">
+                          $.jMaskGlobals = {translation: {
+                              'n': {pattern: /\d/},
+                            }
+                            
+                          };
+                          $('.phone-mask').mask('+380 (nn) nnn-nn-nn').val('+380');
+                        </script>
+                    </div>
+                    <div class="callback-form-box">
+                        <input id="submitinput_popup" class="submit_popup" value="Передзвоніть мені" type="submit" />
+                    </div>
+                </form>
+                <div id="note_popup"></div>
+            </div>
+        </div>
+    </section>
+    
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/main.js?v=3"></script>
 </body>

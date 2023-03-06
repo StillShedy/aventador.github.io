@@ -71,6 +71,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navigation {
@@ -134,6 +135,20 @@ nav {
 
 .button-popup:hover {
     transform: scale(1.03);
+}
+
+.mobile-menu {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 /* video */
@@ -719,7 +734,7 @@ hr {
 .callback-popup-container {
     width: fit-content;
     max-width: 400px;
-    height: 85%;
+    height: fit-content;
     background: #000;
     display: flex;
     flex-direction: column;
@@ -807,8 +822,12 @@ hr {
     overflow-y: hidden;
 }
 
+.mobile {
+    display: none;
+}
 
-@media (max-width:1440px) {
+
+@media only screen and (max-width: 1440px) {
     .contact-us-grid-left {
         margin-left: 50px;
         margin-right: 50px;
@@ -826,7 +845,15 @@ hr {
 
 
 
-@media (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
+    .full {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
     .coaches img {
         max-height: 1000px;
     }
@@ -897,10 +924,88 @@ hr {
         height: 80px;
     }
 
+    .navigation {
+        width: 100%;
+        align-items: center;
+    }
+
+    .callback-popup-container {
+        max-width: 500px;
+    }
+
+    .mobile-menu-button {
+        width: 40px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 25px;
+        cursor: pointer;
+    }
+
+    .logo {
+        margin: 25px;
+    }
+
+    .logo img {
+        width: 60%;
+    }
+
+    .mobile-menu-button hr {
+        width: 100%;
+        border: none;
+        border-top: 2px solid #fff;
+    }
+
+    .close-menu {
+        background: white;
+        height: 40px;
+        margin: 25px;
+    }
+
+    .mobile-menu nav {
+        flex-direction: column;
+        margin: 0;
+        text-align: right;
+        font-size: 3vw;
+        margin-right: 10px;
+    }
+
+    .mobile-menu .right-nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .mobile-menu .button-popup {
+        font-size: 3.1vw;
+        width: 90%;
+        text-align: center;
+        transition: all 0s;
+    }
+
+    .mobile-menu .right-nav a {
+        margin: 20px 20px;
+        font-size: 2.5vw;
+    }
+
+    .mobile-menu .logo {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .mobile-menu .logo img {
+        width: 40%;
+    }
 
 }
 
-@media (max-width:820px) {
+@media only screen and (max-width: 820px) {
     .play-button {
         width: 60px;
         height: 60px;
@@ -910,16 +1015,134 @@ hr {
         width: 60px;
         height: 60px;
     }
+
 }
 
-@media (max-width:680px) {
+@media only screen and (max-width: 680px) {
     .play-button {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
+        top: 40%;
+        left: 45%;
     }
 
     .stop-button {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
+        top: 40%;
+        left: 45%;
+    }
+
+    .container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .callback-form-container {
+        font-size: 22px;
+    }
+
+    .callback-popup-container {
+        max-width: 255px;
+        padding: 30px 45px;
+    }
+
+    .callback-popup-container h2 {
+        font-size: 28px;
+    }
+
+    .callback-popup-container p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .submit_popup {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-height: 420px) {
+    .mobile-menu {
+        overflow-y: scroll;
+    }
+
+    .callback-popup {
+        align-items: flex-start;
+        overflow-y: scroll;
+    }
+
+    .callback-popup-container {
+        max-width: 90%;
+        padding: 15px 20px;
+    }
+
+    .callback-popup::-webkit-scrollbar,
+    .mobile-menu::-webkit-scrollbar  {
+        width: 3px;
+    }
+    
+    .callback-popup::-webkit-scrollbar-track,
+    .mobile-menu::-webkit-scrollbar-track {
+        background: #fff;
+    }
+    
+    .callback-popup::-webkit-scrollbar-thumb,
+    .mobile-menu::-webkit-scrollbar-thumb {
+        background: red;
+        border-radius: 3px;
+    }
+
+    .callback-popup-container h2 {
+        font-size: 24px;
+        margin: 10px 0;
+        line-height: 22px;
+    }
+
+    .callback-popup-container p {
+        font-size: 14px;
+        line-height: 12px;
+    }
+
+    .callback-form-container {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .callback-popup .input_popup {
+        min-height: 24px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .callback-popup-container {
+        max-width: 85%;
+        padding: 15px 20px;
+    }
+
+    .callback-popup-container h2 {
+        font-size: 24px;
+        margin: 10px 0;
+        line-height: 22px;
+    }
+
+    .callback-popup-container p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .callback-form-container {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .callback-popup .input_popup {
+        min-height: 24px;
+        font-size: 18px;
+    }
+
+    .content-logo img {
+        max-width: 280px;
     }
 }

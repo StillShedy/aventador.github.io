@@ -1,10 +1,6 @@
 window.elements = document.getElementsByClassName('clickable');
 for (var el of window.elements) {
     el.addEventListener('click', function () {
-        for (var element of window.elements) {
-            element.classList.remove('nav-item-active');
-        }
-        this.classList.add('nav-item-active');
         document.getElementById(this.dataset.target).scrollIntoView({ behavior: 'smooth', block: 'start' });
     })
 }

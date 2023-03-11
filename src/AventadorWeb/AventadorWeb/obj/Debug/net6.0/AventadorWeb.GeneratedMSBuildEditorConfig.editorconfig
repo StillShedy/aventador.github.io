@@ -9,17 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AventadorWeb
 build_property.RootNamespace = AventadorWeb
-build_property.ProjectDir = /Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/
+build_property.ProjectDir = d:\OneDrive\Документы\Projects\aventador.github.io\src\AventadorWeb\AventadorWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb
+build_property.MSBuildProjectDirectory = d:\OneDrive\Документы\Projects\aventador.github.io\src\AventadorWeb\AventadorWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+[d:/OneDrive/Документы/Projects/aventador.github.io/src/AventadorWeb/AventadorWeb/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/Pages/TermOfUses.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVybU9mVXNlcy5jc2h0bWw=
+[d:/OneDrive/Документы/Projects/aventador.github.io/src/AventadorWeb/AventadorWeb/Pages/TermOfUses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVybU9mVXNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

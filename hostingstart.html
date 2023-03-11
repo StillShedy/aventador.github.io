@@ -2,25 +2,28 @@
 <html lang="uk">
 
 <head>
-    <link href="style.css?v=14" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" >
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="slick.css" />
     <link rel="stylesheet" type="text/css" href="slick-theme.css" />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <title>Aventador 2.0 | Crossfit</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </head>
 
 <body>
     <section class="hero-bg">
         <div class="black-wrapper">
             <div class="hero-section container">
-                <div class="navigation">
+                <div class="navigation full">
                     <div class="logo">
                         <img src="img/logo.png">
                     </div>
                     <nav>
-                        <div data-target="about-us" class="clickable nav-item">
+                        <div data-target="about-us-anchor" class="clickable nav-item">
                             <span>Галерея</span>
                         </div>
                         <div data-target="shedule" class="clickable nav-item">
@@ -37,21 +40,65 @@
                         </div>
                     </nav>
                     <div class="right-nav">
-
+                        <a href="tel:+380966577116">096 657 71 16</a>
+                        <div class="button-popup">Записатись</div>
                     </div>
                 </div>
-                <div class="hero-title">
+                <div class="navigation mobile">
+                    <div class="logo">
+                        <img src="img/logo.png">
+                    </div>
+                    <div class="mobile-menu-button open-menu">
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
+                <div class="mobile-menu st0">
+                    <div class="mobile-menu-button close-menu">
+                        <img src="img/cross.png" alt="">
+                    </div>
+                    <nav>
+                        <div data-target="about-us-anchor" class="clickable nav-item">
+                            <span>Галерея</span>
+                        </div>
+                        <div data-target="shedule" class="clickable nav-item">
+                            <span>Розклад</span>
+                        </div>
+                        <div data-target="services" class="clickable nav-item">
+                            <span>Послуги</span>
+                        </div>
+                        <div data-target="team" class="clickable nav-item">
+                            <span>Команда</span>
+                        </div>
+                        <div data-target="contact-us" class="clickable nav-item">
+                            <span>Контакти</span>
+                        </div>
+                    </nav>
+                    <div class="right-nav">
+                        <div class="button-popup">Записатись</div>
+                        <a href="tel:+380966577116">096 657 71 16</a>
+                    </div>
+                    <div class="logo">
+                        <img src="img/logo.png">
+                    </div>
+                </div>
+                <div class="video-container">
+                    <div id="play-stop-button" class="play-button pointer"></div>
+                    <video id="video" src="video/aventador.MP4"></video>
+                </div>
+                <!-- <div class="hero-title">
                     <h1>Crossfit - це універсальна зброя,<br>яка завжди з тобою!</h1>
                 </div>
                 <div class="hero-button-container">
                     <button data-target="contact-us" class="hero-button clickable">Приєднатись</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
     <section class="why-crossfit-bg">
         <div class="why-crossfit-content">
-            <div class="container">
+            <!-- <div class="container">
                 <h2 class="why-crossfit-content-title-small">
                     Чи вивезеш ти?
                 </h2>
@@ -61,9 +108,35 @@
                 <h2 class="why-crossfit-content-title">
                     Прийди і перевір
                 </h2>
-                <p class="why-crossfit-content-text">
+                <p class="why-crossfit-content-text" id="about-us-anchor">
                     знижка на перше тренування
                 </p>
+            </div> -->
+            <div class="about">
+                <div class="about-top">
+                    <h2>
+                       в aventador особлива атмосфера 
+                    </h2>
+                    <div class="about-contacts">
+                        <div class="button-popup">Записатись</div>
+                        <p>або зателефонувати</p>
+                        <a href="tel:+380966577116">096 657 71 16</a>
+                    </div>
+                </div>
+                <div class="about-bottom">
+                    <div class="about-box">
+                        <img src="img/cube.png" alt="">
+                        <p>Ефективні тренування з ретельно продуманою структурою</p>
+                    </div>
+                    <div class="about-box">
+                        <img src="img/muscle.png" alt="">
+                        <p>Професійні тренери, які пройшли ретельний відбір</p>
+                    </div>
+                    <div class="about-box">
+                        <img src="img/concentration.png" alt="">
+                        <p>Комфортна атмосфера допоможе зконцентруватися на тренуванні</p>
+                    </div>
+                </div>
             </div>
 
             <div class="gallery-grid" id="about-us">
@@ -453,7 +526,43 @@
             </div>
         </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <section class="callback-popup st0">
+        <div class="callback-popup-container">
+            <div class="callback-popup-close">
+                <img src="img/cross.png" alt="">
+            </div>
+            <div>
+                <h2>Бажєте записатись або отримати консультацію?</h2>
+                <p>Заповніть форму нижче і ми Вам передзвонимо.</p>
+            </div>
+            <div class="callback-form-container">
+                <form class="callback-form" id="callback-popup" action="" method="">
+                    <div class="callback-form-box">
+                        <label class="input-title">Ваше ім'я</label>
+                        <input type="text"  name="name_popup" placeholder="Ім'я" class="input_popup" required>
+                    </div>
+                    <div class="callback-form-box">
+                        <label class="input-title">Ваш телефон</label>
+                        <input type="text" name="tel_popup" class="input_popup phone-mask" required>
+                        <script type="text/javascript">
+                          $.jMaskGlobals = {translation: {
+                              'n': {pattern: /\d/},
+                            }
+                            
+                          };
+                          $('.phone-mask').mask('+380 (nn) nnn-nn-nn').val('+380');
+                        </script>
+                    </div>
+                    <div class="callback-form-box">
+                        <input id="submitinput_popup" class="submit_popup" value="Передзвоніть мені" type="submit" />
+                    </div>
+                </form>
+                <div id="note_popup"></div>
+            </div>
+        </div>
+    </section>
+    
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/main.js?v=3"></script>
 </body>

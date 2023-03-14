@@ -234,7 +234,7 @@ nav {
 
     .about-top .button-popup {
         width: 55%;
-        font-size: 2vw;
+        font-size: 1.9vw;
     }
 
 .about-contacts p {
@@ -1024,7 +1024,7 @@ footer {
         width: 55px;
         height: 55px;
     }
-}
+
 
 .play-button {
     width: 80px;

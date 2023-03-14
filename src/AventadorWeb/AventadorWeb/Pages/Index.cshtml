@@ -1,5 +1,6 @@
 ﻿@page
 @model AventadorWeb.Pages.IndexModel
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
 
 
 <!DOCTYPE html>
@@ -517,14 +518,14 @@
                 <p>Заповніть форму нижче і ми Вам передзвонимо.</p>
             </div>
             <div class="callback-form-container">
-                <form class="callback-form" id="callback-popup" action="" method="">
+                <form class="callback-form" id="callback-popup" method="post">
                     <div class="callback-form-box">
                         <label class="input-title">Ваше ім'я</label>
-                        <input type="text" name="name_popup" placeholder="Ім'я" class="input_popup" required>
+                        <input type="text" name="name" placeholder="Ім'я" class="input_popup" required>
                     </div>
                     <div class="callback-form-box">
                         <label class="input-title">Ваш телефон</label>
-                        <input type="text" name="tel_popup" class="input_popup phone-mask" required>
+                        <input type="text" name="telephone" class="input_popup phone-mask" required>
                     </div>
                     <div class="callback-form-box">
                         <input id="submitinput_popup" class="submit_popup" value="Передзвоніть мені" type="submit" />

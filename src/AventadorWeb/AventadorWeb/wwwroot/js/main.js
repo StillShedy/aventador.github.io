@@ -1,10 +1,6 @@
 window.elements = document.getElementsByClassName('clickable');
 for (var el of window.elements) {
     el.addEventListener('click', function () {
-        for (var element of window.elements) {
-            element.classList.remove('nav-item-active');
-        }
-        this.classList.add('nav-item-active');
         document.getElementById(this.dataset.target).scrollIntoView({ behavior: 'smooth', block: 'start' });
     })
 }
@@ -74,3 +70,71 @@ $('.popup-preview').on('click', function () {
     $('body').css("position", "fixed");
     $('body').css('top', `-${scrollPosition}px`);
 })
+
+$.jMaskGlobals = {
+    translation: {
+        'n': { pattern: /\d/ },
+    }
+
+};
+$('.phone-mask').mask('+380 (nn) nnn-nn-nn').val('+380');
+
+
+// VIDEO
+
+let video = document.getElementById("video");
+
+$('#play-stop-button').click(function playPause() {
+    if (video.paused) {
+        video.play();
+        $('#play-stop-button').removeClass('play-button');
+        $('#play-stop-button').addClass('stop-button');
+    } else {
+        video.pause();
+        $('#play-stop-button').removeClass('stop-button');
+        $('#play-stop-button').addClass('play-button');
+    }
+});
+
+video.addEventListener("ended", function () {
+    video.pause();
+    $('#play-stop-button').removeClass('stop-button');
+    $('#play-stop-button').addClass('play-button');
+
+})
+
+// POP-UP
+
+$('.button-popup').click(function () {
+    $('.callback-popup').removeClass('st0');
+    $('body').addClass('no-scroll');
+    $('nav').addClass('st0')
+    $('.mobile-menu').addClass('st0');
+})
+
+$('.callback-popup-close').click(function () {
+    $('.callback-popup').addClass('st0');
+    $('body').removeClass('no-scroll');
+    $('nav').removeClass('st0')
+})
+
+// Menu mobile 
+
+$('.open-menu').click(function (e) {
+    e.preventDefault();
+    $('.mobile-menu').removeClass('st0');
+    $('body').addClass('no-scroll');
+});
+
+$('.close-menu').click(function (e) {
+    e.preventDefault();
+    $('.mobile-menu').addClass('st0');
+    $('body').removeClass('no-scroll');
+});
+
+$('.nav-item').click(function (e) {
+    e.preventDefault();
+    $('body').removeClass('no-scroll');
+    $('.mobile-menu').addClass('st0');
+
+});

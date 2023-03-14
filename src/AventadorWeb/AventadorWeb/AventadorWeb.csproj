@@ -6,4 +6,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\video\" />
+    <Content Remove="wwwroot\video\aventador.MP4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\video\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\video\aventador.MP4" />
+  </ItemGroup>
 </Project>

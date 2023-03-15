@@ -39,7 +39,7 @@ html {
 }
 
 .hero-bg {
-    z-index: 2;
+    z-index: 5;
     position: relative;
 }
 
@@ -64,6 +64,7 @@ html {
 
 .black-wrapper {
     background-color: #000;
+
 }
 
 .hero-section {
@@ -233,7 +234,7 @@ nav {
     }
 
     .about-top .button-popup {
-        width: 55%;
+        width: fit-content;
         font-size: 1.9vw;
     }
 
@@ -751,6 +752,12 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.callback-popup-close-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .popup-close {
@@ -1293,3 +1300,4 @@ footer {
     .content-logo img {
         max-width: 280px;
     }
+}

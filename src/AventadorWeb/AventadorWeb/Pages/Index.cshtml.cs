@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Security.Authentication;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Telegram.Bot;
 
@@ -22,22 +23,36 @@ public class IndexModel : PageModel
             return Page();
         }
 
-        var client = new TelegramBotClient("6102354649:AAGLsHxfJRaNXYfbvbKeNAYQQT20zthRdZg");
-
+        var client = new TelegramBotClient("6102354649:AAGLsHxfJRaNXYfbvbKeNAYQQT20zthRdZg", GetHttpClient());
         try
         {
             await client.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(-1001848878432), text: $"{LoginPageModel.Name} {LoginPageModel.Telephone}", cancellationToken: cancellationToken);
+            Response.Headers.Add("status", "GOOD");
         }
         catch (Exception ex)
         {
+            Response.Headers.Add("status", "BAD");
             try
             {
                 await client.SendTextMessageAsync(new Telegram.Bot.Types.ChatId(-1001848878432), text: ex.Message, cancellationToken: cancellationToken);
+                Response.Headers.Add("message", ex.Message);
             }
-            catch { }
+            catch (Exception e) {
+                Response.Headers.Add("message", e.Message);
+            }
         }
 
         return Page();
+    }
+
+    private HttpClient GetHttpClient()
+    {
+        var httpHandler = new HttpClientHandler
+        {
+            SslProtocols = SslProtocols.Tls12
+        };
+
+        return new HttpClient(httpHandler);
     }
 }
 

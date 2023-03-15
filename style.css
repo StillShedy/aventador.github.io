@@ -239,8 +239,8 @@ nav {
 }
 
 .about-top .button-popup {
-    width: 55%;
-    font-size: 2vw;
+    width: fit-content;
+    font-size: 1.9vw;
 }
 
 .about-contacts p {

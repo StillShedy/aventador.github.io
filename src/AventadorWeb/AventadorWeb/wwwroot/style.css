@@ -754,6 +754,12 @@ hr {
     justify-content: center;
 }
 
+.callback-popup-close-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .popup-close {
     margin-bottom: 10px;
     display: flex;

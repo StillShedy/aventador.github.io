@@ -1,0 +1,257 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/ajax-loader.gif",
+      "PackagePath": "staticwebassets/ajax-loader.gif"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/CrossfitDemo-Bold.otf",
+      "PackagePath": "staticwebassets/fonts/CrossfitDemo-Bold.otf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/CrossfitDemo-Light.otf",
+      "PackagePath": "staticwebassets/fonts/CrossfitDemo-Light.otf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/Unbounded-Black.ttf",
+      "PackagePath": "staticwebassets/fonts/Unbounded-Black.ttf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/Unbounded-Bold.ttf",
+      "PackagePath": "staticwebassets/fonts/Unbounded-Bold.ttf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/Unbounded-ExtraBold.ttf",
+      "PackagePath": "staticwebassets/fonts/Unbounded-ExtraBold.ttf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/Unbounded-ExtraLight.ttf",
+      "PackagePath": "staticwebassets/fonts/Unbounded-ExtraLight.ttf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/Unbounded-Light.ttf",
+      "PackagePath": "staticwebassets/fonts/Unbounded-Light.ttf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/Unbounded-Medium.ttf",
+      "PackagePath": "staticwebassets/fonts/Unbounded-Medium.ttf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/Unbounded-Regular.ttf",
+      "PackagePath": "staticwebassets/fonts/Unbounded-Regular.ttf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/Unbounded-SemiBold.ttf",
+      "PackagePath": "staticwebassets/fonts/Unbounded-SemiBold.ttf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/slick.eot",
+      "PackagePath": "staticwebassets/fonts/slick.eot"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/slick.svg",
+      "PackagePath": "staticwebassets/fonts/slick.svg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/slick.ttf",
+      "PackagePath": "staticwebassets/fonts/slick.ttf"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/fonts/slick.woff",
+      "PackagePath": "staticwebassets/fonts/slick.woff"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/1.jpg",
+      "PackagePath": "staticwebassets/img/1.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/alex.jpg",
+      "PackagePath": "staticwebassets/img/alex.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/alex_square.jpg",
+      "PackagePath": "staticwebassets/img/alex_square.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/concentration.png",
+      "PackagePath": "staticwebassets/img/concentration.png"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/cross.png",
+      "PackagePath": "staticwebassets/img/cross.png"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/cube.png",
+      "PackagePath": "staticwebassets/img/cube.png"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/duo.jpg",
+      "PackagePath": "staticwebassets/img/duo.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/favicon.ico",
+      "PackagePath": "staticwebassets/img/favicon.ico"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/google1.jpeg",
+      "PackagePath": "staticwebassets/img/google1.jpeg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/greblya.jpg",
+      "PackagePath": "staticwebassets/img/greblya.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/inst.svg",
+      "PackagePath": "staticwebassets/img/inst.svg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/inst1.jpeg",
+      "PackagePath": "staticwebassets/img/inst1.jpeg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/inst3.jpeg",
+      "PackagePath": "staticwebassets/img/inst3.jpeg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/inst5.jpeg",
+      "PackagePath": "staticwebassets/img/inst5.jpeg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/logo.png",
+      "PackagePath": "staticwebassets/img/logo.png"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/max.jpg",
+      "PackagePath": "staticwebassets/img/max.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/max3.jpeg",
+      "PackagePath": "staticwebassets/img/max3.jpeg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/max_square.jpg",
+      "PackagePath": "staticwebassets/img/max_square.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/muscle.png",
+      "PackagePath": "staticwebassets/img/muscle.png"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/pause.png",
+      "PackagePath": "staticwebassets/img/pause.png"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/play.svg",
+      "PackagePath": "staticwebassets/img/play.svg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod1.JPG",
+      "PackagePath": "staticwebassets/img/prod1.JPG"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod11.JPG",
+      "PackagePath": "staticwebassets/img/prod11.JPG"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod12.JPG",
+      "PackagePath": "staticwebassets/img/prod12.JPG"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod13.JPG",
+      "PackagePath": "staticwebassets/img/prod13.JPG"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod14.JPG",
+      "PackagePath": "staticwebassets/img/prod14.JPG"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod15.JPG",
+      "PackagePath": "staticwebassets/img/prod15.JPG"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod16-2.jpg",
+      "PackagePath": "staticwebassets/img/prod16-2.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod2.JPG",
+      "PackagePath": "staticwebassets/img/prod2.JPG"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod3.JPG",
+      "PackagePath": "staticwebassets/img/prod3.JPG"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod4.JPG",
+      "PackagePath": "staticwebassets/img/prod4.JPG"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod8.JPG",
+      "PackagePath": "staticwebassets/img/prod8.JPG"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/prod9.jpg",
+      "PackagePath": "staticwebassets/img/prod9.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/tg.svg",
+      "PackagePath": "staticwebassets/img/tg.svg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/visamaster.png",
+      "PackagePath": "staticwebassets/img/visamaster.png"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/zal1.jpg",
+      "PackagePath": "staticwebassets/img/zal1.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/zal2.jpg",
+      "PackagePath": "staticwebassets/img/zal2.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/img/zal3.jpg",
+      "PackagePath": "staticwebassets/img/zal3.jpg"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/js/slick.js",
+      "PackagePath": "staticwebassets/js/slick.js"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/slick-theme.css",
+      "PackagePath": "staticwebassets/slick-theme.css"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/slick.css",
+      "PackagePath": "staticwebassets/slick.css"
+    },
+    {
+      "Id": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/wwwroot/style.css",
+      "PackagePath": "staticwebassets/style.css"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.AventadorWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.AventadorWeb.props",
+      "PackagePath": "build\\AventadorWeb.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.AventadorWeb.props",
+      "PackagePath": "buildMultiTargeting\\AventadorWeb.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.AventadorWeb.props",
+      "PackagePath": "buildTransitive\\AventadorWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

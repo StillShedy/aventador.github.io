@@ -1,0 +1,44 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.SubmitForm>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Aventador.Controllers;
+@using Aventador.Model;
+
+@{
+    Layout = null;
+    var item = new FormModel();
+}
+
+<section class="callback-popup st0">
+    <div class="callback-popup-container">
+        <div class="callback-popup-close-container">
+            <div class="callback-popup-close">
+                <img src="img/cross.png" alt="">
+            </div>
+        </div>
+        <div>
+            <h2>@Model.Header</h2>
+            <p>@Model.Description</p>
+        </div>
+        <div class="callback-form-container">
+            @using (Html.BeginUmbracoForm<FormController>(nameof(FormController.Submit), FormMethod.Post))
+            {
+                <div class="callback-form" id="callback-popup">
+                    <div class="callback-form-box">
+                        <label class="input-title">Ваше ім'я</label>
+                        <input type="text" name="clientName" placeholder="Ім'я" class="input_popup" required>
+                    </div>
+                    <div class="callback-form-box">
+                        <label class="input-title">Ваш телефон</label>
+                        <input type="text" name="telephone"  class="input_popup phone-mask" required>
+                    </div>
+                    <div class="callback-form-box">
+                        <input id="submitinput_popup" class="submit_popup" value="@Model.ButtonText" type="submit" />
+                    </div>
+                </div>
+            }
+
+            <div id="note_popup"></div>
+        </div>
+    </div>
+</section>

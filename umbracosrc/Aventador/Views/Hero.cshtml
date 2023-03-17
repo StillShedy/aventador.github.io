@@ -1,0 +1,139 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Hero>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = null;
+    var alphabet = "abcdef";
+    var root = Umbraco.ContentAtRoot().FirstOrDefault(x => x.ContentType.Alias == Home.ModelTypeAlias).SafeCast<Home>();
+}
+
+<section class="hero-bg">
+    <div class="black-wrapper">
+        <div class="hero-section container">
+            <div class="navigation full">
+                <div class="logo">
+                    <img src="@root.Logo.GetCropUrl()">
+                </div>
+                <nav>
+                    <div data-target="about-us-anchor" class="clickable nav-item">
+                        <span>Галерея</span>
+                    </div>
+                    <div data-target="shedule" class="clickable nav-item">
+                        <span>Розклад</span>
+                    </div>
+                    <div data-target="services" class="clickable nav-item">
+                        <span>Послуги</span>
+                    </div>
+                    <div data-target="team" class="clickable nav-item">
+                        <span>Команда</span>
+                    </div>
+                    <div data-target="contact-us" class="clickable nav-item">
+                        <span>Контакти</span>
+                    </div>
+                </nav>
+                <div class="right-nav">
+                    <a href="tel:@Model.Telephone">@Model.Telephone</a>
+                    <div class="button-popup">@Model.ButtonText</div>
+                </div>
+            </div>
+            <div class="navigation mobile">
+                <div class="logo">
+                    <img src="@root.Logo.GetCropUrl()">
+                </div>
+                <div class="mobile-menu-button open-menu">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+            </div>
+            <div class="mobile-menu st0">
+                <div class="mobile-menu-button close-menu">
+                    <img src="img/cross.png" alt="">
+                </div>
+                <nav>
+                    <div data-target="about-us-anchor" class="clickable nav-item">
+                        <span>Галерея</span>
+                    </div>
+                    <div data-target="shedule" class="clickable nav-item">
+                        <span>Розклад</span>
+                    </div>
+                    <div data-target="services" class="clickable nav-item">
+                        <span>Послуги</span>
+                    </div>
+                    <div data-target="team" class="clickable nav-item">
+                        <span>Команда</span>
+                    </div>
+                    <div data-target="contact-us" class="clickable nav-item">
+                        <span>Контакти</span>
+                    </div>
+                </nav>
+                <div class="right-nav">
+                    <div class="button-popup">@Model.ButtonText</div>
+                    <a href="tel:@Model.Telephone">@Model.Telephone</a>
+                </div>
+                <div class="logo">
+                    <img src="@root.Logo.GetCropUrl()">
+                </div>
+            </div>
+            <div class="video-container">
+                <div id="play-stop-button" class="play-button pointer"></div>
+                <video id="video" src="@Model.Video.GetCropUrl()"></video>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="why-crossfit-bg">
+    <div class="why-crossfit-content">
+        <div class="about">
+            <div class="about-top">
+                <h2>
+                    @Model.Title
+                </h2>
+                <div class="about-contacts">
+                    <div class="button-popup">@Model.ButtonText</div>
+                    <p>@Model.SmallText</p>
+                    <a href="tel:@Model.Telephone">@Model.Telephone</a>
+                </div>
+            </div>
+            @if (Model.About is not null && Model.About.Any())
+            {
+                <div class="about-bottom">
+                    @foreach (var item in Model.About.Select(x => x.Content).OfType<IconWithText>())
+                    {
+                        <div class="about-box">
+                            <img src="@item.Icon.GetCropUrl()" alt="">
+                            <p>@item.Text</p>
+                        </div>
+                    }
+                </div>
+            }
+
+        </div>
+        @if (Model.Photos is not null && Model.Photos.Any())
+        {
+            <div class="gallery-grid" id="about-us">
+                @foreach (var item in Model.Photos.Take(7))
+                {
+                    <div class="@alphabet[Model.Photos.IndexOf(item)]">
+                        <img class="popup-preview" src="@(Model.Photos.IndexOf(item) == 0 ? item.GetCropUrl(width:800, height:500) : item.GetCropUrl())" />
+                    </div>
+                }
+            </div>
+            <div class="images-popup" style="display: none;">
+                <div class="images-popup-content">
+                    <div class="popup-close">
+                        <img src="img/cross.png">
+                    </div>
+                    <div class="image-open-container">
+                        @foreach (var item in Model.Photos)
+                        {
+                            <div class="container-item">
+                                <img src="@item.GetCropUrl()" />
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>

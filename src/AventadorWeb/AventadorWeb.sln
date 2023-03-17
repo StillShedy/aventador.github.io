@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1704.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AventadorWeb", "AventadorWeb\AventadorWeb.csproj", "{A90A2002-B673-410B-A29C-294355E01D18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aventador", "..\..\umbracosrc\Aventador\Aventador.csproj", "{DDA722B9-4FC0-445E-B56A-95126A5311E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A90A2002-B673-410B-A29C-294355E01D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A90A2002-B673-410B-A29C-294355E01D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A90A2002-B673-410B-A29C-294355E01D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDA722B9-4FC0-445E-B56A-95126A5311E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA722B9-4FC0-445E-B56A-95126A5311E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA722B9-4FC0-445E-B56A-95126A5311E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA722B9-4FC0-445E-B56A-95126A5311E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

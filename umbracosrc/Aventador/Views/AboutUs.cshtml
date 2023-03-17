@@ -1,0 +1,36 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.AboutUs>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = null;
+}
+
+<section class="contact-us" id="contact-us">
+    <div class="black-wrapper">
+        <div class="contact-us-grid container-contact-us">
+            <div class="contact-us-grid-left">
+                <h2>@Model.Header</h2>
+                <h3>@Html.Raw(Model.Address)</h3>
+                <h4><a href="tel:@Model.Telephone">@Model.Telephone</a></h4>
+                <div class="contact-us-social-container">
+                    @if (!string.IsNullOrEmpty(Model.TelegramLink))
+                    {
+                        <a class="contact-us-social" href="@Model.TelegramLink">
+                            <img class="contact-us-social" src="img/tg.svg">
+                        </a>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.InstagramLink))
+                    {
+                        <a class="contact-us-social" href="@Model.InstagramLink">
+                            <img class="contact-us-social" src="img/inst.svg">
+                        </a>
+                    }
+
+                </div>
+            </div>
+            <div>
+                <div id='map' style='width: auto; height: 100%;'></div>
+            </div>
+        </div>
+    </div>
+</section>

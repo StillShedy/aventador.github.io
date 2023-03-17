@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "b7ffY8IVp7Phyz4MxIRm8xIfEJRW4/pSsQ7JwxS07y6TquZKskfhdVHgGEmQCueZj4+9YrossojFO2qV6sWSMg==",
+  "dgSpecHash": "N8rIYPf1yKgNUNqKSpatSr0DMJLMC92YbJ2TNuEixKt4WWbAinAsKiWpQXMp5ZrertINJyJCGWzVa5umrtPXaA==",
   "success": true,
-  "projectFilePath": "/Users/denisturchak/Documents/work/emailserver/aventador/src/AventadorWeb/AventadorWeb/AventadorWeb.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/denisturchak/Documents/work/crossfit/aventador.github.io/src/AventadorWeb/AventadorWeb/AventadorWeb.csproj",
+  "expectedPackageFiles": [
+    "/Users/denisturchak/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/denisturchak/.nuget/packages/telegram.bot/18.0.0/telegram.bot.18.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

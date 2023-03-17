@@ -1,0 +1,36 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.PriceListDocumentType>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = null;
+}
+
+@if (Model.ListView is not null && Model.ListView.Any())
+{
+    <section class="services-bg" id="services">
+        <div class="black-wrapper">
+            <div class="container service-container">
+                <div class="service-title">
+                    Послуги
+                </div>
+
+                @foreach (var item in Model.ListView.ToList().Select(x => x.Content).OfType<PriceItem>())
+                {
+                    <div class="service-title-list-item">
+                        <div>
+                            @item.ItemName
+                        </div>
+                        <div>
+                            @item.Price
+                        </div>
+                    </div>
+                    <hr>
+                }
+            </div>
+        </div>
+
+    </section>
+
+}
+
+

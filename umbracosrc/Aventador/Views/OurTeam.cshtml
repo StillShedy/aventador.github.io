@@ -1,0 +1,52 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.OurTeam>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = null;
+
+}
+
+@if (Model.Coaches is not null && Model.Coaches.Any())
+{
+    <section class="coaches-bg" id="team">
+        <div class="coached-content black-wrapper">
+            <div class="container">
+                <div class="service-title">
+                    Наша команда
+                </div>
+                <div class="coaches">
+                    @{
+                        var coachItem = Model.Coaches.Select(x => x.Content).OfType<CoachItem>();
+                    }
+                    @foreach (var coach in coachItem)
+                    {
+                        var member = coach.TeamMember.SafeCast<Coach>();
+                        <div>
+                            <img src="@member.Photo.GetCropUrl()">
+                            <div class="coach-item">
+                                <h3>
+                                    @member.CoachName
+                                </h3>
+                                <h4>@member.Rang</h4>
+                                @if (member.Description is not null && member.Description.Any())
+                                {
+                                    <p>
+                                        @foreach (var desctiption in member.Description)
+                                        {
+                                            <span class="coach-description-item">
+                                                @desctiption
+                                            </span>
+                                        }
+                                    </p>
+                                }
+
+
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </section>
+}

@@ -1,0 +1,212 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+    Layout = null;
+    var root = Umbraco.ContentAtRoot().FirstOrDefault(x => x.ContentType.Alias == Home.ModelTypeAlias).SafeCast<Home>();
+}
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <link href="/css/main.css?v=@Guid.NewGuid()" rel="stylesheet" type="text/css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta name="description" content="@root.Description">
+    <meta name="keywords" content="@root.Keywords">
+    <meta charset="UTF-8">
+    <title>@root.Title</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCD6V8XJWK"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DCD6V8XJWK');</script>
+</head>
+<body>
+
+    @foreach (var item in Model.Children.Where(x => x.IsVisible()))
+    {
+        var str = char.ToUpper(item.ContentType.Alias[0]) + item.ContentType.Alias.Substring(1);
+        await Html.RenderPartialAsync(str, item);
+    }
+
+    <section class="shedule-section" id="shedule">
+        <div class="black-wrapper">
+            <div class="schedule container">
+                <h2 class="shedule-header">Розклад групових занять</h2>
+                <div class="schedule-raw">
+                    <div class="chedule-header-item">09:00</div>
+                    <div class="max-time shedule-details">
+                        <div class="days-data">
+                            <div>
+                                <span class="shedule-sport">crossfit</span>
+                            </div>
+                            <div class="days-item">
+                                <span>ПН СР ПТ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-time right-coach">
+                        <img class="shedule-img" src="/img/max_square.jpg" />
+                        <span>Максим</span>
+                    </div>
+                </div>
+                <div class="schedule-raw">
+                    <div class="chedule-header-item">10:00</div>
+                    <div class="max-time shedule-details">
+                        <div class="days-data">
+                            <div>
+                                <span class="shedule-sport">crossfit</span>
+                            </div>
+                            <div class="days-item">
+                                <span>ВТ ЧТ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-time right-coach">
+                        <img class="shedule-img" src="/img/alex_square.jpg" />
+                        <span>Саша</span>
+                    </div>
+                </div>
+                <div class="schedule-raw">
+                    <div class="chedule-header-item">11:00</div>
+                    <div class="max-time shedule-details">
+                        <div class="days-data">
+                            <div>
+                                <span class="shedule-sport">crossfit</span>
+                            </div>
+                            <div class="days-item">
+                                <span>СБ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-time right-coach">
+                        <img class="shedule-img" src="/img/alex_square.jpg" />
+                        <span>Саша</span>
+                    </div>
+                </div>
+                <div class="schedule-raw">
+                    <div class="chedule-header-item">12:00</div>
+                    <div class="max-time shedule-details">
+                        <div class="days-data">
+                            <div>
+                                <span class="shedule-sport">crossfit</span>
+                            </div>
+                            <div class="days-item">
+                                <span>ПН СР ПТ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-time right-coach">
+                        <img class="shedule-img" src="/img/alex_square.jpg" />
+                        <span>Саша</span>
+                    </div>
+                </div>
+                <div class="schedule-raw">
+                    <div class="chedule-header-item">12:30</div>
+                    <div class="max-time shedule-details">
+                        <div class="days-data">
+                            <div>
+                                <span class="shedule-sport">mobility</span>
+                            </div>
+                            <div class="days-item">
+                                <span>СБ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-time right-coach">
+                        <img class="shedule-img" src="/img/max_square.jpg" />
+                        <span>Максим</span>
+                    </div>
+                </div>
+                <div class="schedule-raw-merged">
+                    <div class="chedule-header-item left">17:00</div>
+                    <div class="max-time shedule-details middle-top">
+                        <div class="days-data">
+                            <div>
+                                <span class="shedule-sport">crossfit</span>
+                            </div>
+                            <div class="days-item">
+                                <span>ПН СР ПТ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-time right-coach right-top">
+                        <img class="shedule-img" src="/img/alex_square.jpg" />
+                        <span>Саша</span>
+                    </div>
+                    <div class="max-time shedule-details middle-bottom">
+                        <div class="days-data">
+                            <div>
+                                <span class="shedule-sport">crossfit</span>
+                            </div>
+                            <div class="days-item">
+                                <span>ВТ ЧТ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-time right-coach right-bottom">
+                        <img class="shedule-img" src="/img/max_square.jpg" />
+                        <span>Максим</span>
+                    </div>
+                </div>
+                <div class="schedule-raw-merged">
+                    <div class="chedule-header-item left">18:30</div>
+                    <div class="max-time shedule-details middle-top">
+                        <div class="days-data">
+                            <div>
+                                <span class="shedule-sport">crossfit</span>
+                            </div>
+                            <div class="days-item">
+                                <span>ПН СР ПТ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-time right-coach right-top">
+                        <img class="shedule-img" src="/img/max_square.jpg" />
+                        <span>Максим</span>
+                    </div>
+                    <div class="max-time shedule-details middle-bottom">
+                        <div class="days-data">
+                            <div>
+                                <span class="shedule-sport">crossfit</span>
+                            </div>
+                            <div class="days-item">
+                                <span>ВТ ЧТ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-time right-coach right-bottom">
+                        <img class="shedule-img" src="/img/alex_square.jpg" />
+                        <span>Саша</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div>
+            <img src="/img/visamaster.png" />
+        </div>
+        <div>
+            <a class="termofuselink" href="@Umbraco.ContentAtRoot().FirstOrDefault(x=>x.ContentType.Alias == TermOfUses.ModelTypeAlias)?.Url()">Правила і умови</a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="/scripts/slick.js"></script>
+    <script type="text/javascript" src="/scripts/main.js?v=@Guid.NewGuid()"></script>
+</body>
+
+</html>

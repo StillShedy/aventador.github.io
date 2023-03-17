@@ -1,29 +1,30 @@
-﻿<Properties StartupConfiguration="{A90A2002-B673-410B-A29C-294355E01D18}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+﻿<Properties StartupConfiguration="{DDA722B9-4FC0-445E-B56A-95126A5311E4}|Umbraco.Web.UI">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AventadorWeb/Pages/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../umbracosrc/Aventador/Views/Hero.cshtml">
     <Files>
-      <File FileName="AventadorWeb/appsettings.json" />
-      <File FileName="AventadorWeb/Program.cs" Line="22" Column="1" />
-      <File FileName="AventadorWeb/Pages/Index.cshtml" Line="280" Column="15" />
-      <File FileName="AventadorWeb/Pages/Index.cshtml.cs" Line="4" Column="11" />
-      <File FileName="AventadorWeb/Pages/TermOfUses.cshtml" Line="8" Column="44" />
-      <File FileName="AventadorWeb/wwwroot/style.css" Line="656" Column="31" />
+      <File FileName="../../umbracosrc/Aventador/Views/OurTeam.cshtml" Line="22" Column="22" />
+      <File FileName="../../umbracosrc/Aventador/Views/Home.cshtml" Line="242" Column="68" />
+      <File FileName="../../umbracosrc/Aventador/Views/PriceListDocumentType.cshtml" Line="11" Column="36" />
+      <File FileName="../../umbracosrc/Aventador/Views/Hero.cshtml" Line="102" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AventadorWeb" expanded="True">
-            <Node name="AventadorWeb" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Index.cshtml" expanded="True" selected="True" />
+            <Node name="Aventador" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Partials" expanded="True" />
+                <Node name="Hero.cshtml" selected="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="img" expanded="True" />
+                <Node name="css" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="appsettings-schema.json" expanded="True" />
+            </Node>
+            <Node name="AventadorWeb" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.cshtml" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -31,5 +32,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.AventadorWeb PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Aventador PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

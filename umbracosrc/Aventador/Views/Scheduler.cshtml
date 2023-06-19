@@ -1,0 +1,63 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Scheduler>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = null;
+    var ukrainianCulture = new System.Globalization.CultureInfo("uk-UA");
+    var dow = new List<DayOfWeek> { DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday, DayOfWeek.Thursday, DayOfWeek.Friday, DayOfWeek.Saturday };
+    var daysOfWeek = dow.Select(e => ukrainianCulture.DateTimeFormat.GetAbbreviatedDayName(e).ToUpper()).ToArray();
+    var content = Model.Sheduler.Select(x => x.Content).OfType<SchedulerItem>();
+    var allTimesExist = content.Select(x => x.Time.FirstOrDefault()).Distinct().OrderBy(x => x.Length).ThenBy(x => x).ToList();
+}
+
+<section class="shedule-section" id="shedule">
+    <div class="black-wrapper">
+        <div class="schedule container">
+            <h2 class="shedule-header">Розклад групових занять</h2>
+            <div class="schedule-raw">
+                <div class="chedule-header-item"></div>
+                <div class="chedule-header-item">@daysOfWeek[0]</div>
+                <div class="chedule-header-item">@daysOfWeek[1]</div>
+                <div class="chedule-header-item">@daysOfWeek[2]</div>
+                <div class="chedule-header-item">@daysOfWeek[3]</div>
+                <div class="chedule-header-item">@daysOfWeek[4]</div>
+                <div class="chedule-header-item">@daysOfWeek[5]</div>
+                @foreach (var time in allTimesExist)
+                {
+                    <div class="chedule-header-item">@time</div>
+                    @foreach (var day in daysOfWeek)
+                    {
+                        var training = content.FirstOrDefault(x => x.Day.FirstOrDefault() == day && x.Time.FirstOrDefault() == time);
+                        if (training is null)
+                        {
+                            <div class="max-time">
+
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="max-time shedule-details">
+                                <div class="days-data" style="min-height:120px">
+                                    @{
+                                        var coach = training.Coach.SafeCast<Coach>();
+                                    }
+                                    <div class="right-coach">
+                                        <div>
+                                            <span class="shedule-sport">@training.Label</span>
+                                        </div>
+                                        @*<img class="shedule-img" src="@coach.Photo?.GetCropUrl()" />*@
+                                        <span>@coach.CoachName</span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+
+                }
+            </div>
+
+        </div>
+    </div>
+
+
+</section>

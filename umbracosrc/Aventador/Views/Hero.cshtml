@@ -3,7 +3,7 @@
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
     Layout = null;
-    var alphabet = "abcdef";
+    var alphabet = "abcdefg";
     var root = Umbraco.ContentAtRoot().FirstOrDefault(x => x.ContentType.Alias == Home.ModelTypeAlias).SafeCast<Home>();
 }
 
